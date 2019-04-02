@@ -1,0 +1,207 @@
+\documentclass[]{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage\hspace{1pt} de~\pageref{LastPage}}
+
+\title{Proyecto de Redes de Computadores}
+\author{
+    Guillermo López García
+    \and
+    Gonzalo Ulibarri García
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+    \and
+    qqqqqqqqqqqqqqqqqqqqqqq
+}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Primera Hoja}
+\begin{table}[h!]
+  \begin{center}
+    \caption{Preguntas Integrantes}
+    \begin{tabular}{ccccc}
+      \toprule
+      \textbf{Integrantes} & \textbf{Pregunta 1} & \textbf{Pregunta 2}
+      \textbf{Pregunta 3} & \textbf{Pregunta 4} \\
+      \midrule
+      1 &  &  \\
+      2 &  &  \\
+      3 &  &  \\
+      4 &  &  \\
+      5 &  &  \\
+      6 &  &  \\
+      7 &  &  \\
+      8 &  &  \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Preguntas Integrantes}
+    \begin{tabular}{ccccc}
+      \toprule
+      \textbf{Integrantes} & \textbf{Pregunta 5} & \textbf{Pregunta 6}
+      \textbf{Pregunta 7} & \textbf{Pregunta 8} \\
+      \midrule
+      1 &  &  \\
+      2 &  &  \\
+      3 &  &  \\
+      4 &  &  \\
+      5 &  &  \\
+      6 &  &  \\
+      7 &  &  \\
+      8 &  &  \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\textbf{Coordinador/a: } Guillermo López García. \newline
+\textbf{Ponente 1: } Guillermo López García. \newline
+\textbf{Ponente 2: } Guillermo López García.
+
+\underline{Pregunta 1:}
+\underline{Pregunta 2:}
+\underline{Pregunta 3:}
+\underline{Pregunta 4:}
+\underline{Pregunta 5:}
+\underline{Pregunta 6:}
+\underline{Pregunta 7:}
+\underline{Pregunta 8:}
+
+\newpage
+
+\section{Segunda Hoja}
+\begin{table}[h!]
+  \centering
+  \begin{center}
+    \caption{Tabla profesor}
+    \resizebox{\columnwidth}{!}{
+        \begin{tabular}{ccc}
+          \toprule
+          \textbf{Conceptos a valorar} & \textbf{Puntuación Máxima} & \textbf{Puntuación Otorgada} \\
+          \midrule
+          Contenido del dossier claro y detallado & 3 puntos &  \\
+          \midrule
+          Maquetación/Formato del dossier         & 1 punto  &  \\
+          \midrule
+          Ponente 1                               & 1 punto  &  \\
+          \midrule
+          Ponente 2                               & 1 punto  &  \\
+          \midrule
+          Preguntas formuladas                    & 4 puntos &  \\
+          \midrule
+          Puntuación total                        & \multicolumn{2}{c}{} \\
+          \bottomrule
+        \end{tabular}
+    }
+  \end{center}
+\end{table}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Documento 1: Planos de Cableado Horizontal}
+
+\newpage
+
+\section{Documento 2: Distribuidores}
+\begin{table}[ht!]
+  \centering
+  \begin{center}
+    \caption{Tabla distribuidores}
+    \resizebox{\columnwidth}{!}{
+        \begin{tabular}{cccccccc}
+          \toprule
+          \multicolumn{3}{l}{Etiqueta del distribuidor: } & \multicolumn{2}{c}{} \\
+          \midrule
+          \multicolumn{3}{l}{Altura mínima del distribuidor: } & \multicolumn{2}{c}{} \\
+          \midrule
+          \multicolumn{3}{l}{Ubicación: } & \multicolumn{2}{c}{} \\
+          \midrule
+          \textbf{Dispositivo} & \textbf{Capa OSI} & \textbf{Altura} &
+          \textbf{Nº Puertos} & \textbf{Estándar*} & \textbf{TAT Etiquetas*} &
+          \textbf{Tipo Conector} & \textbf{Categoría} \\
+          \midrule
+           &  &  \\
+          \midrule
+           &  &  \\
+          \midrule
+           &  &  \\
+          \midrule
+           &  &  \\
+          \midrule
+           &  &  \\
+          \midrule
+           & \multicolumn{2}{c}{} \\
+          \bottomrule
+        \end{tabular}
+    }
+  \end{center}
+\end{table}
+
+\newpage
+
+\section{Documento 3: Plano de Cableado Vertical}
+
+\newpage
+
+\section{Documento 4: Plano de Conexión}
+
+\newpage
+
+\section{Documento 5: Justificadores}
+
+
+% Para listar fragmentos de codigo de un lenguaje de programacion
+% \lstset{language=, texcl=true}
+% \begin{lstlisting}[frame=single]
+% \end{lstlisting}
+
+% Para listar una secuencia de elementos
+% \textbf{}
+% \begin{enumerate}
+    % \item
+% \end{enumerate}
+
+% Para mostrar una figura
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.7\linewidth]{}
+% \caption{}
+% \end{figure}
+
+% Para listar el contenido de un archivo de texto
+% \verbatiminput{.txt}
+
+\end{document}
