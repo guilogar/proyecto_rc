@@ -137,11 +137,11 @@
           \textbf{Nº Puertos} & \textbf{Estándar*} & \textbf{TAT Etiquetas*} &
           \textbf{Tipo Conector} & \textbf{Categoría} & \textbf{Cantidad} \\
           \midrule
-          Switch & Enlace & 1U & 48 & IEEE 802 & RJ1-RJ139(Fija \- Datos) PA1-PA7 & G45 / RJ45 LC & 7 & 4 \\
+          Switch Fibra & Enlace & 1U & 48 PoE / 1 SFP & IEEE 802 & RJA1-RJA139(Fija --- Datos) PAA1-PAA7 & G45 / RJ45 LC & 7 & 4 \\
           \midrule
-           &  &  \\
+          Punto de Acceso & Enlace & --- & 1 PoE & IEEE 802.3af & PAA1-PAA7 & LC & 7 & 7 \\
           \midrule
-           &  &  \\
+          Path Panel Datos/VoIP/Wifi & Física & 2U & 48 & --- & RJA1-RJA139(Fija --- Datos) PAA1-PAA7 & G45/RJ45 & --- & 4 \\
           \midrule
            &  &  \\
           \midrule
@@ -161,7 +161,7 @@
           \toprule
           \multicolumn{3}{l}{Etiqueta del distribuidor: B- } & \multicolumn{2}{c}{} \\
           \midrule
-          \multicolumn{3}{l}{Altura mínima del distribuidor: 11U } & \multicolumn{2}{c}{} \\
+          \multicolumn{3}{l}{Altura mínima del distribuidor: 27U } & \multicolumn{2}{c}{} \\
           \midrule
           \multicolumn{3}{l}{Ubicación: Planta baja } & \multicolumn{2}{c}{} \\
           \midrule
@@ -169,9 +169,15 @@
           \textbf{Nº Puertos} & \textbf{Estándar*} & \textbf{TAT Etiquetas*} &
           \textbf{Tipo Conector} & \textbf{Categoría} & \textbf{Cantidad} \\
           \midrule
-          Router & Red & 1U & 2GEn4\-10GE & IEEE 1588 & \- & G45 / RJ45 LC & 7 & 4 \\
+          Router & Red & 1U & 2GE/n4\---10GE & IEEE 1588 & --- & G45 / RJ45 LC & 7 & 1 \\
           \midrule
-           &  &  \\
+          Switch Fibra & Enlace & 1U & 48 PoE / 1 SFP & IEEE 802 & RJB1-RJB243(Fija --- Datos) PAB1-PAB7 & G45 / RJ45 LC & 7 & 6 \\
+          \midrule
+          Punto de Acceso & Enlace & --- & 1 PoE & IEEE 802.3af & PAB1-PAB7 & LC & 7 & 7 \\
+          \midrule
+          Path Panel Datos/VoIP/Wifi & Física & 2U & 48 & --- & RJB1-RJB243(Fija --- Datos) PAB1-PAB7 & G45/RJ45 & --- & 4 \\
+          \midrule
+          Path Panel Fibra & Física & 2U & 12 & --- & FB1 --- FB12 & LC & --- & 1 \\
           \midrule
            &  &  \\
           \midrule
