@@ -137,7 +137,7 @@
           \textbf{Nº Puertos} & \textbf{Estándar*} & \textbf{TAT Etiquetas*} &
           \textbf{Tipo Conector} & \textbf{Categoría} & \textbf{Cantidad} \\
           \midrule
-          Switch Fibra & Enlace & 1U & 48 PoE / 1 SFP & IEEE 802 & RJA1-RJA139(Fija --- Datos) PAA1-PAA7 & G45 / RJ45 LC & 7 & 4 \\
+          Switch Fibra & Enlace & 1U & 48 PoE / 4 SFP & IEEE 802 & RJA1-RJA139(Fija --- Datos) PAA1-PAA7 & G45 / RJ45 LC & 7 & 4 \\
           \midrule
           Punto de Acceso & Enlace & --- & 1 PoE & IEEE 802.3af & PAA1-PAA7 & LC & 7 & 7 \\
           \midrule
@@ -171,15 +171,15 @@
           \midrule
           Router & Red & 1U & 2GE/n4\---10GE & IEEE 1588 & --- & G45 / RJ45 LC & 7 & 1 \\
           \midrule
-          Switch Fibra & Enlace & 1U & 48 PoE / 1 SFP & IEEE 802 & RJB1-RJB243(Fija --- Datos) PAB1-PAB7 & G45 / RJ45 LC & 7 & 6 \\
+          Switch Fibra & Enlace & 1U & 48 PoE / 4 SFP & IEEE 802 & RJB1-RJB243(Fija --- Datos) PAB1-PAB7 & G45 / RJ45 LC & 7 & 6 \\
           \midrule
           Punto de Acceso & Enlace & --- & 1 PoE & IEEE 802.3af & PAB1-PAB7 & LC & 7 & 7 \\
           \midrule
           Path Panel Datos/VoIP/Wifi & Física & 2U & 48 & --- & RJB1-RJB243(Fija --- Datos) PAB1-PAB7 & G45/RJ45 & --- & 4 \\
           \midrule
-          Path Panel Fibra & Física & 2U & 12 & --- & FB1 --- FB12 & LC & --- & 1 \\
+          Path Panel Fibra & Física & 2U & 12 & --- & FB1 --- FB12(Multimode VDSL/ADSL+) & LC & --- & 1 \\
           \midrule
-           &  &  \\
+          Dispositivo Firewall & Transporte & 1U & 7 (5 + 2 USB) & --- & --- & RJ45 / USB & --- & 1 \\
           \midrule
            &  &  \\
           \midrule
@@ -204,6 +204,19 @@
 
 \section{Documento 5: Justificadores}
 
+\begin{enumerate}[label=\alph*]
+   \item \underline{Respecto al Documento 1}:
+   \item \underline{Respecto al Documento 2}:
+   \item \underline{Respecto al Documento 3}:
+        Hemos considerado la interconexión entre los switches con fibra óptica para aumentar el rendimiento y la velocidad. Cada switch de cada planta irá conectado con fibra multimodo al siguiente switch del respectivo rack. No haremos distinciones entre conexiones, ya sean para voz o datos. \\
+        Pensamos además conectar los puntos de acceso con Power Ethernet (PoE) para darle un suministro de energía a dicho dispositivos. \\
+        Para las etiquetas, hemos realizado una codificación simple, separando solamente las etiquetas correspondientes a los puntos de acceso. Dicha codificación será:
+        \begin{center} (tipo de conector) (etiq distribuidor) (número de conexión)\end{center}
+        \begin{center}Ejemplo: RJA4 (conexión 4, planta superior datos / VoIP)\end{center}
+        Para el routing, utilizaremos solo un router en el Rack B (Planta Baja). Esto es debido a que no es necesario amplificar la señal de las conexiones mas lejanas, ya que, en ningún caso superara los 100 metros.
+   \item \underline{Respecto al Documento 4}:
+   \item \underline{Conclusión Final}:
+\end{enumerate}
 
 % Para listar fragmentos de codigo de un lenguaje de programacion
 % \lstset{language=, texcl=true}
