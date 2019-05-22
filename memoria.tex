@@ -69,7 +69,7 @@
 
 \textbf{Coordinador/a: } Guillermo López García. \newline
 \textbf{Ponente 1: } Guillermo López García. \newline
-\textbf{Ponente 2: } Guillermo López García.
+\textbf{Ponente 2: } Gonzalo Ulibarri García.
 
 \underline{Pregunta 1:}
 \underline{Pregunta 2:}
@@ -192,6 +192,49 @@
   \end{center}
 \end{table}
 
+\begin{table}[ht!]
+  \centering
+  \begin{center}
+    \caption{Direccionamiento Planta Alta}
+    \resizebox{\columnwidth}{!}{
+        \begin{tabular}{cc}
+          \toprule
+          \textbf{Elemento} & \textbf{Dirección IP} \\
+          \midrule
+          VLAN Switch 1 --- VLAN Switch 4 & 172.20.0.2/22 --- 172.20.0.5/22 \\
+          RJA1 --- RJA132 (Fija --- Datos) & 172.20.0.6/22 --- 172.20.0.137/22 \\
+          \midrule
+          Punto de Acceso (Etiquetas) \\
+          PAA1 --- PAA7 & 172.20.0.138/22 --- 172.20.0.144/22 \\
+          \bottomrule
+        \end{tabular}
+    }
+  \end{center}
+\end{table}
+
+\begin{table}[ht!]
+  \centering
+  \begin{center}
+    \caption{Direccionamiento Planta Baja}
+    \resizebox{\columnwidth}{!}{
+        \begin{tabular}{cc}
+          \toprule
+          \textbf{Elemento} & \textbf{Dirección IP} \\
+          \midrule
+          VLAN Switch 1 --- VLAN Switch 6 & 172.20.2.2/22 --- 172.20.2.5/22 \\
+          RJB1 --- RJB132 (Fija --- Datos) & 172.20.2.6/22 --- 172.20.2.237/22 \\
+          \midrule
+          Router: \\
+          IP Privada: & 172.20.2.1/22 \\
+          IP Pública: & 10.0.0.1/24 \\
+          \midrule
+          Punto de Acceso (Etiquetas) \\
+          PAB1 --- PAB7 & 172.20.2.238/22 --- 172.20.2.244/22 \\
+          \bottomrule
+        \end{tabular}
+    }
+  \end{center}
+\end{table}
 \newpage
 
 \section{Documento 3: Plano de Cableado Vertical}
@@ -207,7 +250,7 @@
 \begin{enumerate}[label=\alph*]
    \item \underline{Respecto al Documento 1}:
 	Respecto al cableado horizontal, se han instalado tomas de conexiones de tamaño específico para cada posible puesto de trabajo. El número de conexiones varía atendiendo al número de dispositivos máximos conectados simultáneamente que se tenga previsto. Se ha considerado también añadir tomas de conexiones para posibles puntos de acceso que cubran toda la superficie del edificio, colocándolas en punto estratégicos que cumplan este requisito. Las tomas dedicadas para los puntos de acceso tendrán únicamente un puerto para estos. \\
-	Para los racks, se ha  considerado como buena localización en la planta baja el espacio bajo la escalera hacia la primera planta, y en ésta, la denominada "sala de informática", ya que probablemente en esta sala se encuentren más racks para uso como servidor de datos o para lo que sea pertinente. \\
+	Para los racks, se ha  considerado como buena localización en la planta baja el espacio bajo la escalera hacia la primera planta, y en ésta, la denominada `sala de informática', ya que probablemente en esta sala se encuentren más racks para uso como servidor de datos o para lo que sea pertinente. \\
 	La distribución del cableado horizontal se ha pensado para que sea lo más centralizada posible, recorriendo el hall del edificio y manteniendo distancias no muy prolongadas entre las tomas de conexiones y el cableado del hall, permitiendo así que con un único rack por planta ésta quede cubierta.
    \item \underline{Respecto al Documento 2}:
    \item \underline{Respecto al Documento 3}:
