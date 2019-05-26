@@ -9,6 +9,7 @@
 \usepackage{listings}
 \usepackage{float}
 \usepackage{verbatim}
+\usepackage{verbatimbox}
 \usepackage{booktabs}
 \usepackage{makecell}
 \usepackage{tabularx}
@@ -241,15 +242,21 @@
 \section{Documento 4: Plano de Conexión de Distribuidores}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.40]{rpa}
+\includegraphics[scale=0.40]{d4}
 \caption{}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.40]{rpb}
-\caption{}
-\end{figure}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.40]{rpa}
+%\caption{}
+%\end{figure}
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[scale=0.40]{rpb}
+%\caption{}
+%\end{figure}
 
 \newpage
 
@@ -271,8 +278,13 @@
    \item \underline{Respecto al Documento 3}: Se ha realizado un plano de la sección vértical 1/2 - G/A. Se han suprimido las vistas de las habitaciones intermedias y los elementos superfluos para realizar un plano simple y preciso. \\
        Hemos realizado el cableado vértical a través del suelo de la primera planta y el falso techo de la segunda planta. Desde el Rack A, hemos dirigido la fibra a través de una canalizaciones en el suelo perpendicular al plano, luego, desde una loseta hemos tirado el cable de fibra multimodo al falso techo de la planta B para dirigirlo hacia la sección del Rack B. Ya en la sección del Rack B, sacamos la fibra a través de una canalización cercana a la escalera, para sacarla del falso techo y unirla al Rack. \\
        Se ha dibujado la fibra multimodo en color verde.
-   \item \underline{Respecto al Documento 4}:
-   \item \underline{Conclusión Final}:
+   \item \underline{Respecto al Documento 4}: Respecto al Rack de la Planta A, se ha optado por poner el path panel abajo de los swith para mayor facilidad a la hora de cambiar cableado por algun tipo de error o que se quiera escalabilidad. \\
+       Respecto al Rack de la Planta B, se ha optado por la misma decisión, excepto poniendo el router en entre los switch y el path panel. Esto se ha puesto así para que estuviera el router a media altura, y en caso de tener que cambiarlo, para hacer de manera más sencilla y segura. \\
+       Además, como se puede ver, en cada path panel hay conexiones hacia las tomas de los puestos de trabajo, tanto para puntos de acceso, VoIP y datos, para los host que trabajen con datos como ordenadores.
+   \item \underline{Conclusión Final}: A la conclusión final a la que hemos llegado es que el idear el clabeado, tanto vertical como horizontal, ha sido de lo mas complicado. Sobre todo, a la hora de que se tenía que respetar decisiones de arquitectura y no podiamos campar a nuestras anchas.\\
+    Por otro lado, la gestión de distribuidores ha sido más liviana gracias a la información proporcionada por la web de distintas empresas que ofrecen productos con una larga y muy buena especificación. Gracias a ellos, hemos podido saber que es lo que necesitabamos de forma general para que nuestro proyecto de cableado fuera eficaz y simple.\\
+    Por último, solo aclarar que la decisión más complicada ha sido la de el plano de conexión en el documento 4, donde, realmente hemos tenido dolores de cabeza para ponerlo de forma idónea para que otros administradores de redes de computadores lo tuvieran lo más fácil posible a la hora de cambiar, disminuir o aumentar el número de swith, path panel y demás componentes que forma parte de este proyecto.
+    \item \underline{Historico de realización del proyecto}: \verbfilenobox[\tiny]{historico.txt }
 \end{enumerate}
 
 % Para listar fragmentos de codigo de un lenguaje de programacion
