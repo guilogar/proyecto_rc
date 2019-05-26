@@ -1,4 +1,5 @@
-*   [2019-05-26 15:08:35 +0200] [557fd9b] | Merge branch 'master' of github.com:guilogar/proyecto_rc {{guilogar}}  (HEAD -> master, origin/master, origin/HEAD, bitbucket/master)
+* [2019-05-27 00:28:59 +0200] [de287fe] | Plano de conexion añadido. Queda actualizar el historico.txt despues de este commit. {{guilogar}}  (HEAD -> master)
+*   [2019-05-26 15:08:35 +0200] [557fd9b] | Merge branch 'master' of github.com:guilogar/proyecto_rc {{guilogar}}  (origin/master, origin/HEAD, bitbucket/master)
 |\  
 | * [2019-05-26 14:33:01 +0200] [d847e60] | Cableado Vertical realizado, y actualizacion del plano de conexiones {{gonzalouli}} 
 * | [2019-05-26 15:06:46 +0200] [e5fe426] | Plano de conexion y justificacion {{guilogar}} 
