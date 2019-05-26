@@ -70,15 +70,16 @@
 \textbf{Coordinador/a: } Guillermo López García. \newline
 \textbf{Ponente 1: } Guillermo López García. \newline
 \textbf{Ponente 2: } Gonzalo Ulibarri García.
-
-\underline{Pregunta 1:}
-\underline{Pregunta 2:}
-\underline{Pregunta 3:}
-\underline{Pregunta 4:}
-\underline{Pregunta 5:}
-\underline{Pregunta 6:}
-\underline{Pregunta 7:}
-\underline{Pregunta 8:}
+\\
+\\
+\underline{Pregunta 1:} \\
+\underline{Pregunta 2:} \\
+\underline{Pregunta 3:} \\
+\underline{Pregunta 4:} \\
+\underline{Pregunta 5:} \\
+\underline{Pregunta 6:} \\
+\underline{Pregunta 7:} \\
+\underline{Pregunta 8:} \\
 
 \newpage
 
@@ -200,10 +201,12 @@
 \begin{table}[ht!]
   \centering
   \begin{center}
-    \caption{Direccionamiento Planta Alta}
+    \caption{Direccionamiento Planta Alta y Baja}
     \resizebox{\columnwidth}{!}{
         \begin{tabular}{cc}
           \toprule
+          \textbf{Planta A} \\
+          \midrule
           \textbf{Elemento} & \textbf{Dirección IP} \\
           \midrule
           VLAN Switch 1 --- VLAN Switch 4 & 172.20.0.2/22 --- 172.20.0.5/22 \\
@@ -211,20 +214,8 @@
           \midrule
           Punto de Acceso (Etiquetas) \\
           PAA1 --- PAA7 & 172.20.0.138/22 --- 172.20.0.144/22 \\
-          \bottomrule
-        \end{tabular}
-    }
-  \end{center}
-\end{table}
-
-\begin{table}[ht!]
-  \centering
-  \begin{center}
-    \caption{Direccionamiento Planta Baja}
-    \resizebox{\columnwidth}{!}{
-        \begin{tabular}{cc}
-          \toprule
-          \textbf{Elemento} & \textbf{Dirección IP} \\
+          \midrule
+          \textbf{Planta B} \\
           \midrule
           VLAN Switch 1 --- VLAN Switch 6 & 172.20.2.2/22 --- 172.20.2.5/22 \\
           RJB1 --- RJB132 (Fija --- Datos) & 172.20.2.6/22 --- 172.20.2.237/22 \\
@@ -240,17 +231,29 @@
     }
   \end{center}
 \end{table}
+
 \newpage
 
 \section{Documento 3: Plano de Cableado Vertical}
 
 \newpage
 
-\section{Documento 4: Plano de Conexión}
+\section{Documento 4: Plano de Conexión de Distribuidores}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.40]{rpa}
+\caption{}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.40]{rpb}
+\caption{}
+\end{figure}
 
 \newpage
 
-\section{Documento 5: Justificadores}
+\section{Documento 5: Justificación}
 
 \begin{enumerate}[label=\alph*]
    \item \underline{Respecto al Documento 1}:
@@ -258,13 +261,16 @@
 	Para los racks, se ha  considerado como buena localización en la planta baja el espacio bajo la escalera hacia la primera planta, y en ésta, la denominada `sala de informática', ya que probablemente en esta sala se encuentren más racks para uso como servidor de datos o para lo que sea pertinente. \\
 	La distribución del cableado horizontal se ha pensado para que sea lo más centralizada posible, recorriendo el hall del edificio y manteniendo distancias no muy prolongadas entre las tomas de conexiones y el cableado del hall, permitiendo así que con un único rack por planta ésta quede cubierta.
    \item \underline{Respecto al Documento 2}:
-   \item \underline{Respecto al Documento 3}:
         Hemos considerado la interconexión entre los switches con fibra óptica para aumentar el rendimiento y la velocidad. Cada switch de cada planta irá conectado con fibra multimodo al siguiente switch del respectivo rack. Cada switch del rack A irá conectado al siguiente switch de dicho rack a través de fibra multimodo hasta que llegue al ultimo, entonces, a través del cableado vertical se conecta dicho switch con el primer switch del rack B. Al igual, dichos switch del rack B se conectarán con el siguiente hasta llegar al ultimo, el cual, se conectará con el router.No haremos distinciones entre conexiones, ya sean para voz o datos. \\
         Pensamos además conectar los puntos de acceso con Power Ethernet (PoE) para darle un suministro de energía a dicho dispositivos. \\
         Para las etiquetas, hemos realizado una codificación simple, separando solamente las etiquetas correspondientes a los puntos de acceso. Dicha codificación será:
         \begin{center} (tipo de conector) (etiq distribuidor) (número de conexión)\end{center}
         \begin{center}Ejemplo: RJA4 (conexión 4, planta superior datos / VoIP)\end{center}
         Para el routing, utilizaremos solo un router en el Rack B (Planta Baja). Esto es debido a que no es necesario amplificar la señal de las conexiones mas lejanas, ya que, en ningún caso superara los 100 metros.
+
+   \item \underline{Respecto al Documento 3}: Se ha realizado un plano de la sección vértical 1/2 - G/A. Se han suprimido las vistas de las habitaciones intermedias y los elementos superfluos para realizar un plano simple y preciso. \\
+       Hemos realizado el cableado vértical a través del suelo de la primera planta y el falso techo de la segunda planta. Desde el Rack A, hemos dirigido la fibra a través de una canalizaciones en el suelo perpendicular al plano, luego, desde una loseta hemos tirado el cable de fibra multimodo al falso techo de la planta B para dirigirlo hacia la sección del Rack B. Ya en la sección del Rack B, sacamos la fibra a través de una canalización cercana a la escalera, para sacarla del falso techo y unirla al Rack. \\
+       Se ha dibujado la fibra multimodo en color verde.
    \item \underline{Respecto al Documento 4}:
    \item \underline{Conclusión Final}:
 \end{enumerate}
