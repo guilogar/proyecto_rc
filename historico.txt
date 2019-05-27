@@ -1,0 +1,37 @@
+*   [2019-05-27 00:31:15 +0200] [d20cd83] | Merge branch 'master' of github.com:guilogar/proyecto_rc {{guilogar}}  (HEAD -> master)
+|\  
+| * [2019-05-26 19:34:05 +0200] [8680d3a] | Add files via upload {{gonzalouli}}  (origin/master, origin/HEAD)
+| * [2019-05-26 19:32:19 +0200] [1980c61] | Añado novedades en el plano de trabajo y de conexiones {{gonzalouli}} 
+| * [2019-05-26 19:27:34 +0200] [a0ff703] | Actualiza el planeado vertical {{gonzalouli}} 
+* | [2019-05-27 00:29:13 +0200] [5f2e01f] | Listo, añadido. {{guilogar}}  (bitbucket/master)
+* | [2019-05-27 00:28:59 +0200] [de287fe] | Plano de conexion añadido. Queda actualizar el historico.txt despues de este commit. {{guilogar}} 
+|/  
+*   [2019-05-26 15:08:35 +0200] [557fd9b] | Merge branch 'master' of github.com:guilogar/proyecto_rc {{guilogar}} 
+|\  
+| * [2019-05-26 14:33:01 +0200] [d847e60] | Cableado Vertical realizado, y actualizacion del plano de conexiones {{gonzalouli}} 
+* | [2019-05-26 15:06:46 +0200] [e5fe426] | Plano de conexion y justificacion {{guilogar}} 
+|/  
+* [2019-05-26 14:21:39 +0200] [d523ffb] | memoria.tex modificada {{guilogar}} 
+* [2019-05-26 14:17:21 +0200] [690d822] | Nueva imagen añadida {{guilogar}} 
+* [2019-05-26 13:06:52 +0200] [13000d3] | Añadido plano de cableado horizontal a la memoria.tex {{guilogar}} 
+* [2019-05-25 23:12:47 +0200] [7028f70] | Correccion erroes parte3 {{gonzalouli}} 
+* [2019-05-25 23:05:12 +0200] [360022a] | Update memoria.tex {{gonzalouli}} 
+* [2019-05-25 18:54:37 +0200] [2ccda3f] | Add files via upload {{gonzalouli}} 
+* [2019-05-25 18:31:00 +0200] [ca6e2b6] | Add files via upload {{gonzalouli}} 
+* [2019-05-23 17:01:26 +0200] [ff09790] | Cambios al memoria.tex {{GRsni}} 
+*   [2019-05-23 17:00:00 +0200] [7dd2744] | Solve merge issue {{GRsni}} 
+|\  
+| * [2019-05-22 12:14:36 +0200] [2ef9f12] | Direccionamiento añadido a la memoria. Todos los derechos a Alfredo Ramos García. {{guilogar}} 
+| * [2019-05-16 12:57:54 +0200] [776c8c5] | Arreglado error nomenclatura tomas /Justificación cableado horizontal {{Santiago Mas}} 
+* | [2019-05-16 12:55:14 +0200] [d0d63a4] | Añadir justificaciones cableado horizontal {{GRsni}} 
+* | [2019-05-15 14:05:28 +0200] [890fc3d] | Arreglado error en la nomenclatura de las tomas {{GRsni}} 
+|/  
+* [2019-05-14 17:18:42 +0200] [ceab844] | Añadidos algunos autores del grupo {{JordiGM}} 
+* [2019-05-08 15:45:51 +0200] [6478d5c] | Tablas del documento 3 terminadas y conclusiones respecto al documento 3 expuestas. {{guilogar}} 
+* [2019-05-08 15:20:11 +0200] [1932b74] | Tablas casi finalizadas {{guilogar}} 
+* [2019-05-08 12:31:15 +0200] [69e63a0] | Actualizacion del documento 2: distribuidores. {{guilogar}} 
+* [2019-05-06 17:19:21 +0200] [d4e134b] | *.pdf quitados {{guilogar}} 
+* [2019-04-03 17:13:29 +0200] [d6a293f] | Añadir nombre Santiago Mas en Autores.tex {{GRsni}} 
+* [2019-04-03 15:31:41 +0200] [eb097ca] | autores.tex añadido. {{guilogar}} 
+* [2019-04-02 17:44:07 +0200] [b68636d] | Primera iteración del documento. {{guilogar}} 
+* [2019-04-02 13:22:24 +0200] [6d45d5d] | Initial commit {{Guillermo López García}} 
